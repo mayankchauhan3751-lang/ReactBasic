@@ -41,7 +41,7 @@ useEffect(()=>{
         <label>Sec</label>
       </div>
     </div>
-
+    <h1>Digital Clock</h1>
     </div>
   )
 }
