@@ -5,7 +5,7 @@ function app(){
   const [result,setresult]=useState("")
   const [input,setinput]=useState("")
   const [attempt,setattempt]=useState(3)
-  const [random] = useState(() => Math.floor(Math.random() * 10) + 1);
+  const [random] = useState(() => Math.floor(Math.random() * 99) + 1);
 
 
 
@@ -35,9 +35,9 @@ function app(){
 
 
   return (
-    <div>
-      <h1>Gussing Number 1-10</h1>
-      <input type="number"
+    <div className="container">
+      <h1>Gussing Number 1-100</h1>
+      <input 
       value={input}
       onChange={(e)=>{setinput(e.target.value)}}/>
       <button onClick={submit}>submit</button>
